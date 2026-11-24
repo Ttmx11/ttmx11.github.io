@@ -1,9 +1,9 @@
 - id: vfm-depth
-  image: /images/publications/vfm-depth-framework.png
-  image_width: 846
-  image_height: 439
-  image_alt_en: HFIT architecture with vision foundation model, RHFF, and HGFI modules.
-  image_alt_zh: 包含视觉基础模型、RHFF 与 HGFI 模块的 HFIT 网络框架。
+  image: /images/publications/vfm-depth-figure2.png
+  image_width: 2042
+  image_height: 852
+  image_alt_en: Figure 2 of HFIT, showing the full architecture with duplex spatial prior extraction, RHFF, and HGFI modules.
+  image_alt_zh: HFIT 论文图 2，展示包含双源空间先验提取、RHFF 与 HGFI 模块的完整架构。
   category: journal
   title: "Fully Exploiting Vision Foundation Model's Profound Prior Knowledge for Generalizable RGB-Depth Driving Scene Parsing"
   authors: "Sicen Guo, Tianyou Wen, Chuang-Wei Liu, Qijun Chen, Rui Fan"
@@ -118,3 +118,111 @@
   year: 2022
   pages: "511–533"
   doi: 10.1007/978-3-031-16598-6_22
+- id: autonomous-driving-perception
+  category: book
+  title: "Autonomous Driving Perception: Fundamentals and Applications"
+  authors: "Rui Fan, Sicen Guo, Mohammud Junaid Bocus"
+  contributor_label_en: Editors
+  contributor_label_zh: 编者
+  role_en: Co-editor
+  role_zh: 副编辑
+  venue: Springer Singapore
+  year: 2023
+  doi: 10.1007/978-981-99-4287-9
+  scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=S2uoYTUAAAAJ&citation_for_view=S2uoYTUAAAAJ:W7OEmFMy1HYC"
+  image: /images/publications/autonomous-driving-perception-cover.png
+  image_width: 664
+  image_height: 1000
+  image_alt_en: Cover of Autonomous Driving Perception showing editors Rui Fan, Sicen Guo, and Mohammud Junaid Bocus.
+  image_alt_zh: 《Autonomous Driving Perception》封面，列有 Rui Fan、Sicen Guo 与 Mohammud Junaid Bocus 三位编者。
+  summary_en: An edited volume on computer vision and deep learning for autonomous driving perception.
+  summary_zh: 围绕自动驾驶感知中的计算机视觉与深度学习方法组织的编著书籍。
+- id: lr-cracknet
+  category: journal
+  title: "Self-Derived Multimodal Knowledge Distillation for Real-Time Road Crack Detection"
+  authors: "Nachuan Ma, Qiang Hu, Zhengfei Song, Sicen Guo, Rui Fan"
+  venue: IEEE Sensors Journal
+  short_venue: IEEE Sensors J.
+  year: 2025
+  volume: "25(20)"
+  pages: "38271–38278"
+  doi: 10.1109/JSEN.2025.3602294
+  summary_en: A teacher-student approach for efficient road crack detection using self-derived boundary information and multimodal knowledge distillation.
+  summary_zh: 利用自生成边界信息与多模态知识蒸馏的教师与学生网络，实现高效道路裂缝检测。
+- id: odformer
+  category: journal
+  title: "ODFormer: Semantic Fundus Image Segmentation Using Transformer for Optic Nerve Head Detection"
+  authors: "Jiayi Wang, Yi-An Mao, Xiaoyu Ma, Sicen Guo, Yuting Shao, Xiao Lv, Wenting Han, Mark Christopher, Linda M. Zangwill, Yanlong Bi, Rui Fan"
+  venue: Information Fusion
+  short_venue: Information Fusion
+  year: 2024
+  volume: "112"
+  pages: "102533"
+  doi: 10.1016/j.inffus.2024.102533
+  image: /images/publications/odformer-framework.png
+  image_width: 680
+  image_height: 310
+  image_alt_en: ODFormer architecture for semantic fundus image segmentation and optic nerve head detection.
+  image_alt_zh: 面向眼底图像语义分割与视神经乳头检测的 ODFormer 网络架构。
+  summary_en: Transformer-based fundus image segmentation with multi-scale context aggregation and feature recalibration for optic nerve head detection.
+  summary_zh: 结合多尺度上下文聚合与特征重校准的 Transformer 眼底图像分割网络，用于视神经乳头检测。
+- id: urban-digital-twins
+  category: conference
+  title: "Urban Digital Twins for Intelligent Road Inspection"
+  authors: "Rui Fan, Yikang Zhang, Sicen Guo, Jiahang Li, Yi Feng, Shuai Su, Yanting Zhang, Wenshuo Wang, Yu Jiang, Mohammud Junaid Bocus, Xingyi Zhu, Qijun Chen"
+  venue: "2022 IEEE International Conference on Big Data (Big Data), Workshop Paper"
+  short_venue: Big Data Workshop
+  year: 2022
+  pages: "5110–5114"
+  doi: 10.1109/BigData55660.2022.10021042
+  image: /images/publications/urban-digital-twins-overview.png
+  image_width: 455
+  image_height: 455
+  image_alt_en: Five-dimensional urban digital twin architecture for intelligent road inspection.
+  image_alt_zh: 面向智能道路检测的五维城市数字孪生架构。
+  summary_en: Urban digital twins for heterogeneous road data acquisition, distress detection, and simulation.
+  summary_zh: 面向多源道路数据采集、病害检测与仿真的城市数字孪生方法。
+- id: computer-aided-road-inspection
+  category: chapter
+  title: "Computer-Aided Road Inspection: Systems and Algorithms"
+  authors: "Rui Fan, Sicen Guo, Li Wang, Mohammud Junaid Bocus"
+  role_en: Second author
+  role_zh: 第二作者
+  venue: "Recent Advances in Computer Vision Applications Using Parallel Processing, Springer"
+  year: 2023
+  pages: "13–39"
+  doi: 10.1007/978-3-031-18735-3_2
+  scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=S2uoYTUAAAAJ&citation_for_view=S2uoYTUAAAAJ:9yKSN-GCB0IC"
+  image: /images/publications/computer-aided-road-inspection-overview.png
+  image_width: 670
+  image_height: 545
+  image_alt_en: Overview of image-analysis-based road damage detection approaches from the book chapter.
+  image_alt_zh: 书籍章节中的基于图像分析的道路病害检测方法综述框架。
+- id: stereo-matching-chapter
+  category: chapter
+  title: "Stereo Matching: Fundamentals, State-of-the-Art, and Existing Challenges"
+  authors: "Chuang-Wei Liu, Hengli Wang, Sicen Guo, Mohammud Junaid Bocus, Qijun Chen, Rui Fan"
+  venue: "Autonomous Driving Perception: Fundamentals and Applications, Springer"
+  year: 2023
+  pages: "63–100"
+  doi: 10.1007/978-981-99-4287-9_3
+  image: /images/publications/stereo-matching-overview.png
+  image_width: 590
+  image_height: 290
+  image_alt_en: Epipolar geometry illustration from the stereo matching chapter.
+  image_alt_zh: 立体匹配章节中的极线几何示意图。
+- id: semantic-segmentation-chapter
+  category: chapter
+  title: "Semantic Segmentation for Autonomous Driving"
+  authors: "Jingwei Yang, Sicen Guo, Mohammud Junaid Bocus, Qijun Chen, Rui Fan"
+  role_en: Second author
+  role_zh: 第二作者
+  venue: "Autonomous Driving Perception: Fundamentals and Applications, Springer"
+  year: 2023
+  pages: "101–137"
+  doi: 10.1007/978-981-99-4287-9_4
+  image: /images/publications/semantic-segmentation-overview.png
+  image_width: 740
+  image_height: 205
+  image_alt_en: Driving scenes and semantic segmentation examples from the book chapter.
+  image_alt_zh: 书籍章节中的驾驶场景与语义分割示例。

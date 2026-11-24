@@ -6,6 +6,8 @@ en:
   awards: Awards
   contact: Contact
   journals: Journal Articles
+  books: Edited Books
+  conferences: Conference & Workshop Papers
   manuscripts: Manuscripts Under Review
   chapters: Book Chapters
   cv: CV (中文 PDF)
@@ -32,6 +34,8 @@ zh:
   awards: 比赛与荣誉
   contact: 联系方式
   journals: 期刊论文
+  books: 编著书籍
+  conferences: 会议与研讨会论文
   manuscripts: 在审工作
   chapters: 书籍章节
   cv: 简历（中文 PDF）

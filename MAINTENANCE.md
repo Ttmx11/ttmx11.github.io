@@ -31,11 +31,15 @@ YAML 缩进使用空格。含冒号的标题请用引号包住；列表中每篇
   summary_zh: 中文简介。
 ```
 
-`category` 可选 `journal`（期刊论文）、`manuscript`（在审稿件）或 `chapter`（书籍章节）。已发表成果未填写 `scholar` 时，自动链接到完整标题的 Scholar 搜索结果；取得准确的个人 Scholar 条目链接后，可添加 `scholar: https://scholar.google.com/citations?...`。
+`category` 可选 `book`（编著书籍）、`journal`（期刊论文）、`conference`（会议与研讨会论文）、`manuscript`（在审稿件）或 `chapter`（书籍章节）。已发表成果未填写 `scholar` 时，自动链接到完整标题的 Scholar 搜索结果；取得准确的个人 Scholar 条目链接后，可添加 `scholar: https://scholar.google.com/citations?...`。
+
+合作成果保留完整作者顺序，页面自动突出 `Sicen Guo`。书籍使用 `contributor_label_en: Editors`、`contributor_label_zh: 编者` 标明编者身份；`role_en` 与 `role_zh` 可说明副编辑、第二作者等个人角色。不要把书籍编者改写为唯一作者。
 
 在审稿件仅填写已经核对的 `arxiv` 地址，无地址则不添加链接。稿件录用后改为 `journal` 并补齐正式年份、刊物等信息；不要将预印本和最终发表版本重复计数。
 
 每项成果通过 `image` 指定配图路径，`image_alt_en` 和 `image_alt_zh` 描述图片内容，`image_width` 和 `image_height` 记录原图尺寸。配图在桌面左侧显示、在手机上方显示，点击可查看完整图片。替换配图时同时更新原图尺寸，保持完整图像、不裁切框架内容。
+
+书籍使用正式封面；未取得原始配图的合作成果可暂不填写 `image`，页面会完整显示文字且不预留空白图片框。现有公开 CV 保留原先的第一作者成果选集，网站展示扩充后的合作成果。
 
 验证脚本自动读取数据中的成果数量及无链接稿件；新增论文或补充 arXiv 链接时无需修改验证脚本。
 

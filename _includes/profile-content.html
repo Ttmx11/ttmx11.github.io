@@ -17,8 +17,14 @@
 </section>
 <section id="publications">
   <h2>{{ t.publications }}</h2>
+  <h3 class="publication-group" id="books">{{ t.books }}</h3>
+  {% assign papers = site.data.publications | where: 'category', 'book' %}
+  {% for paper in papers %}{% include publication.html paper=paper %}{% endfor %}
   <h3 class="publication-group">{{ t.journals }}</h3>
-  {% assign papers = site.data.publications | where: 'category', 'journal' %}
+  {% assign papers = site.data.publications | where: 'category', 'journal' | sort: 'year' | reverse %}
+  {% for paper in papers %}{% include publication.html paper=paper %}{% endfor %}
+  <h3 class="publication-group" id="conferences">{{ t.conferences }}</h3>
+  {% assign papers = site.data.publications | where: 'category', 'conference' %}
   {% for paper in papers %}{% include publication.html paper=paper %}{% endfor %}
   <h3 class="publication-group" id="manuscripts">{{ t.manuscripts }}</h3>
   <p class="section-note">{{ t.manuscript_note }}</p>

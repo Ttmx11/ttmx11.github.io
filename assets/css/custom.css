@@ -56,6 +56,9 @@ body .academic-shell > .academic-content { width: auto; min-width: 0; float: non
 .academic-content h3.publication-group { font-size: 1.075rem; font-weight: 650; margin: 1.8rem 0 1.1rem; }
 .publication { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 22px; align-items: start; margin: 0 0 1.6rem; padding-bottom: 1.35rem; border-bottom: 1px solid #edf0f2; }
 .publication-body { min-width: 0; }
+.publication[data-has-image="false"] { grid-template-columns: minmax(0, 1fr); }
+.publication[data-category="book"] .publication-figure img { max-height: 220px; }
+.publication-role { color: #426b80; font-size: .875rem; font-weight: 600; }
 .publication-figure { display: flex; align-items: center; justify-content: center; min-height: 150px; padding: 8px; border: 1px solid #e5e9ec; border-radius: 4px; background: #fff; transition: border-color .15s ease; }
 .publication-figure:hover { border-color: #8da9b8; }
 .publication-figure img { display: block; width: 100%; height: auto; max-height: 175px; object-fit: contain; }

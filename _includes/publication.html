@@ -9,7 +9,7 @@
   {% assign scholar_query = paper.title | url_encode %}
   {% assign paper_link = 'https://scholar.google.com/scholar?q=' | append: scholar_query %}
 {% endif %}
-<article class="publication" id="paper-{{ paper.id }}">
+<article class="publication" id="paper-{{ paper.id }}" data-has-image="{% if paper.image %}true{% else %}false{% endif %}" data-category="{{ paper.category }}">
   {% if paper.image %}
   <a class="publication-figure" href="{{ paper.image | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ t.view_figure }}: {{ paper.title | escape }}" title="{{ t.view_figure }}">
     <img src="{{ paper.image | relative_url }}" alt="{% if page.lang == 'zh' %}{{ paper.image_alt_zh | escape }}{% else %}{{ paper.image_alt_en | escape }}{% endif %}" loading="lazy" decoding="async"{% if paper.image_width %} width="{{ paper.image_width }}" height="{{ paper.image_height }}"{% endif %}>
@@ -20,7 +20,8 @@
     <h4 class="publication-title">{% if paper_link != '' %}<a href="{{ paper_link | escape }}" target="_blank" rel="noopener noreferrer">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}</h4>
     {% if paper.short_venue %}<span class="venue-badge">{{ paper.short_venue }} {{ paper.year }}</span>{% endif %}
   </div>
-  <p class="publication-authors">{{ paper.authors | escape | replace: 'Sicen Guo', '<strong>Sicen Guo</strong>' }}</p>
+  <p class="publication-authors">{% if page.lang == 'zh' and paper.contributor_label_zh %}{{ paper.contributor_label_zh }}：{% elsif paper.contributor_label_en %}{{ paper.contributor_label_en }}: {% endif %}{{ paper.authors | escape | replace: 'Sicen Guo', '<strong>Sicen Guo</strong>' }}</p>
+  {% if paper.role_en or paper.role_zh %}<p class="publication-role">{% if page.lang == 'zh' %}{{ paper.role_zh }}{% else %}{{ paper.role_en }}{% endif %}</p>{% endif %}
   {% if paper.category == 'manuscript' %}<p class="publication-venue under-review">{{ t.under_review }}</p>{% else %}<p class="publication-venue"><em>{{ paper.venue }}</em>{% if paper.volume %}, {{ paper.volume }}{% endif %}{% if paper.pages %}: {{ paper.pages }}{% endif %}, {{ paper.year }}.</p>{% endif %}
   {% if page.lang == 'zh' and paper.summary_zh %}<p class="publication-summary">{{ paper.summary_zh }}</p>{% elsif paper.summary_en %}<p class="publication-summary">{{ paper.summary_en }}</p>{% endif %}
   {% if paper_link != '' %}<p class="publication-links"><a href="{{ paper_link | escape }}" target="_blank" rel="noopener noreferrer">{% if paper.category == 'manuscript' %}{{ t.arxiv_link }}{% else %}{{ t.scholar_link }}{% endif %}</a></p>{% endif %}
