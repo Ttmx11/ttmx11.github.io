@@ -4,8 +4,8 @@ _site/
 .bundle/
 /vendor/
 tmp/
-output/
-tools/
+/output/
+/tools/
 Gemfile.lock
 __pycache__/
 *.log
