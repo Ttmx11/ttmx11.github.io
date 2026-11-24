@@ -1,0 +1,43 @@
+{% assign t = site.data.ui[page.lang] %}
+{% assign p = site.data.profile[page.lang] %}
+<section id="about" class="about-section">
+  <p class="eyebrow">{{ t.page_label }}</p>
+  <h2 class="intro-title">{{ t.home }}</h2>
+  <div class="bio-text">{{ p.intro | markdownify }}{{ p.research_intro | markdownify }}</div>
+</section>
+<section id="research">
+  <h2>{{ t.research_interests }}</h2>
+  <ul class="research-interests">{% for interest in p.interests %}<li>{{ interest }}</li>{% endfor %}</ul>
+</section>
+<section id="education">
+  <h2>{{ t.education }}</h2>
+  <ul class="education-list">{% for entry in p.education %}
+    <li><div class="education-heading"><strong>{{ entry.institution }}</strong><span class="education-date">{{ entry.period }}</span></div><p>{{ entry.degree }}<br><span class="muted">{{ entry.detail }}</span></p></li>
+  {% endfor %}</ul>
+</section>
+<section id="publications">
+  <h2>{{ t.publications }}</h2>
+  <h3 class="publication-group">{{ t.journals }}</h3>
+  {% assign papers = site.data.publications | where: 'category', 'journal' %}
+  {% for paper in papers %}{% include publication.html paper=paper %}{% endfor %}
+  <h3 class="publication-group" id="manuscripts">{{ t.manuscripts }}</h3>
+  <p class="section-note">{{ t.manuscript_note }}</p>
+  {% assign papers = site.data.publications | where: 'category', 'manuscript' %}
+  {% for paper in papers %}{% include publication.html paper=paper %}{% endfor %}
+  <h3 class="publication-group">{{ t.chapters }}</h3>
+  {% assign papers = site.data.publications | where: 'category', 'chapter' %}
+  {% for paper in papers %}{% include publication.html paper=paper %}{% endfor %}
+</section>
+<section id="awards">
+  <h2>{{ t.awards }}</h2>
+  <ul class="award-list">{% for award in site.data.awards %}
+    <li><strong>{% if page.lang == 'zh' %}{{ award.award_zh }}{% else %}{{ award.award_en }}{% endif %}</strong><span>{% if page.lang == 'zh' %}{{ award.title_zh }}{% else %}{{ award.title_en }}{% endif %}{% if award.year %} · {{ award.year }}{% endif %}</span></li>
+  {% endfor %}</ul>
+</section>
+<section id="contact">
+  <h2>{{ t.contact }}</h2>
+  <p>{{ t.contact_text }}</p>
+  <p class="contact-email"><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a></p>
+  <p>{{ t.advisor }}: <a href="{{ site.data.profile.advisor_url }}">{% if page.lang == 'zh' %}范睿教授{% else %}Prof. Rui Fan{% endif %}</a><br>{{ t.lab }}: <a href="{{ site.data.profile.lab_url }}">{{ p.lab }}</a></p>
+  <a class="cv-download" href="{{ site.data.profile.cv | relative_url }}">{{ t.download_cv }}</a>
+</section>

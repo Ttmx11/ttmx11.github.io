@@ -1,0 +1,68 @@
+name_en: Sicen Guo
+name_zh: 郭思岑
+email: guosicen@tongji.edu.cn
+github: https://github.com/Ttmx11
+scholar: https://scholar.google.com/citations?user=S2uoYTUAAAAJ
+advisor_url: https://www.ruirangerfan.com/
+lab_url: https://mias.group/
+cv: /assets/files/Sicen_Guo_CV.pdf
+en:
+  role: Ph.D. Student
+  university: Tongji University
+  department: College of Electronics and Information Engineering
+  location: Shanghai, China
+  lab: MIAS Group
+  intro: >-
+    I am a Ph.D. student in Control Science and Engineering at **Tongji University**,
+    advised by [Prof. Rui Fan](https://www.ruirangerfan.com/) in the
+    [Machine Intelligence & Autonomous Systems (MIAS) Group](https://mias.group/).
+    I received my bachelor's degree from Tongji University in 2022.
+  research_intro: >-
+    My research focuses on computer vision and intelligent scene understanding.
+    I study how vision foundation models, multimodal large language models,
+    and geometric information can support generalizable perception and reasoning,
+    with applications to autonomous driving.
+  interests:
+    - Vision foundation models
+    - Multimodal reasoning & segmentation
+    - Open-vocabulary segmentation
+    - Reinforcement learning
+    - Knowledge distillation
+  education:
+    - degree: Ph.D. in Control Science and Engineering
+      institution: Tongji University
+      period: "Sep. 2022 – Present"
+      detail: Direct-entry doctoral program
+    - degree: Bachelor's degree in Control Science and Engineering
+      institution: Tongji University
+      period: "Sep. 2018 – Sep. 2022"
+      detail: College of Electronics and Information Engineering
+zh:
+  role: 博士研究生
+  university: 同济大学
+  department: 电子与信息工程学院
+  location: 中国 · 上海
+  lab: MIAS 实验室
+  intro: >-
+    我是**同济大学**控制科学与工程专业的直博研究生，导师为
+    [范睿教授](https://www.ruirangerfan.com/)，所在实验室为
+    [机器智能与自主系统（MIAS）实验室](https://mias.group/)。
+    我于 2022 年获得同济大学学士学位。
+  research_intro: >-
+    我的研究聚焦于计算机视觉与智能场景理解，探索视觉基础模型、多模态大语言模型
+    与几何信息如何支持具有泛化能力的感知和推理，并应用于自动驾驶场景。
+  interests:
+    - 视觉基础模型
+    - 多模态推理与分割
+    - 开放词汇分割
+    - 强化学习
+    - 知识蒸馏
+  education:
+    - degree: 控制科学与工程 · 直博研究生
+      institution: 同济大学
+      period: "2022.09 – 至今"
+      detail: 电子与信息工程学院
+    - degree: 控制科学与工程 · 本科
+      institution: 同济大学
+      period: "2018.09 – 2022.09"
+      detail: 电子与信息工程学院

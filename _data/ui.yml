@@ -1,0 +1,50 @@
+en:
+  home: About
+  research: Research
+  publications: Publications
+  education: Education
+  awards: Awards
+  contact: Contact
+  journals: Journal Articles
+  manuscripts: Manuscripts Under Review
+  chapters: Book Chapters
+  cv: CV (中文 PDF)
+  download_cv: Download CV (中文 PDF)
+  email: Email
+  advisor: Advisor
+  lab: Research group
+  research_interests: Research Interests
+  page_label: Academic Homepage
+  first_author: First author
+  under_review: Under review
+  scholar_link: Google Scholar
+  arxiv_link: arXiv
+  footer: Academic homepage
+  skip: Skip to main content
+  contact_text: For research discussions and academic collaboration, please contact me by email.
+  manuscript_note: These manuscripts are under review and are listed separately from published work.
+zh:
+  home: 关于我
+  research: 研究方向
+  publications: 学术成果
+  education: 教育经历
+  awards: 比赛与荣誉
+  contact: 联系方式
+  journals: 期刊论文
+  manuscripts: 在审工作
+  chapters: 书籍章节
+  cv: 简历（中文 PDF）
+  download_cv: 下载简历（中文 PDF）
+  email: 邮箱
+  advisor: 导师
+  lab: 实验室
+  research_interests: 研究方向
+  page_label: 科研个人主页
+  first_author: 第一作者
+  under_review: 在审
+  scholar_link: Google Scholar
+  arxiv_link: arXiv
+  footer: 科研个人主页
+  skip: 跳转到主要内容
+  contact_text: 欢迎通过邮箱交流研究工作、探讨学术合作。
+  manuscript_note: 以下稿件尚在审稿中，与已发表成果分开展示。

@@ -1,0 +1,75 @@
+- id: vfm-depth
+  category: journal
+  title: "Fully Exploiting Vision Foundation Model's Profound Prior Knowledge for Generalizable RGB-Depth Driving Scene Parsing"
+  authors: "Sicen Guo, Tianyou Wen, Chuang-Wei Liu, Qijun Chen, Rui Fan"
+  venue: IEEE Transactions on Intelligent Vehicles
+  short_venue: T-IV
+  year: 2026
+  volume: "11(3)"
+  pages: "381–390"
+  doi: 10.1109/TIV.2025.3650682
+  summary_en: Harnessing vision foundation models and multi-source, multi-scale feature fusion for RGB-depth driving scene parsing.
+  summary_zh: 利用视觉基础模型与多源多尺度特征融合，实现具有泛化能力的 RGB-深度驾驶场景解析。
+- id: lix
+  category: journal
+  title: "LIX: Implicitly Infusing Spatial Geometric Prior Knowledge Into Visual Semantic Segmentation for Autonomous Driving"
+  authors: "Sicen Guo, Ziwei Long, Zhiyuan Wu, Qijun Chen, Ioannis Pitas, Rui Fan"
+  venue: IEEE Transactions on Image Processing
+  short_venue: T-IP
+  year: 2025
+  volume: "34"
+  pages: "7250–7263"
+  doi: 10.1109/TIP.2025.3618378
+  summary_en: Transferring spatial geometric knowledge from a data-fusion teacher to a single-modal segmentation model through knowledge distillation.
+  summary_zh: 通过知识蒸馏，将数据融合教师模型中的空间几何先验迁移至单模态语义分割模型。
+- id: udtiri
+  category: journal
+  title: "UDTIRI: An Online Open-Source Intelligent Road Inspection Benchmark Suite"
+  authors: "Sicen Guo, Jiahang Li, Yi Feng, Dacheng Zhou, Denghuang Zhang, Chen Chen, Shuai Su, Xingyi Zhu, Qijun Chen, Rui Fan"
+  venue: IEEE Transactions on Intelligent Transportation Systems
+  short_venue: T-ITS
+  year: 2024
+  doi: 10.1109/TITS.2024.3351209
+  summary_en: An open-source benchmark suite and online evaluation platform for intelligent road inspection.
+  summary_zh: 面向智能道路检测的开源基准套件与在线评测平台。
+- id: mulgeca
+  category: manuscript
+  title: "MulGeCa: Anchoring Scattered Semantic Representations to Physical Entities"
+  authors: "Sicen Guo et al."
+  summary_en: Scene-, region-, and instance-level geometric calibration for open-vocabulary segmentation.
+  summary_zh: 面向开放词汇分割的场景、区域与实例三级几何校准。
+- id: tailorseg
+  category: manuscript
+  title: "TailorSeg: Frequency, Scale, and Geometry Calibration for Open-Vocabulary Segmentation"
+  authors: "Sicen Guo et al."
+  summary_en: Calibrating class frequency, target scale, and geometric boundaries for long-tailed and unseen categories.
+  summary_zh: 联合校准类别频率、目标尺度与几何边界，改善长尾及未见类别的分割。
+- id: dsrs
+  category: manuscript
+  title: "DSRS: Teaching MLLMs to Perceive, Reason, and Segment in Complex Driving Scenes"
+  authors: "Sicen Guo, Zhengfei Song, Kuanhsun Chen, Xu Huang, Ping Zhong, Wei Ye, Shaoyi Du, Rui Fan"
+  arxiv: https://arxiv.org/abs/2611.06160
+  summary_en: Driving scene reasoning segmentation with multimodal large language models and geometric features.
+  summary_zh: 融合多模态大语言模型与几何特征的驾驶场景推理分割。
+- id: fastra
+  category: manuscript
+  title: "FaSTra: A Faster Yet Stronger Multi-Trajectory Learning Framework for Reasoning Video Object Segmentation"
+  authors: "Sicen Guo et al."
+  summary_en: Efficient reasoning video object segmentation through complementary trajectories, dynamic routing, distillation, and reinforcement learning.
+  summary_zh: 结合互补轨迹、动态路由、蒸馏与强化学习，提高推理视频目标分割的效率与性能。
+- id: road-environment
+  category: chapter
+  title: "Road Environment Perception for Safe and Comfortable Driving"
+  authors: "Sicen Guo, Yu Jiang, Jiahang Li, Dacheng Zhou, Shuai Su, Mohammud Junaid Bocus, Xingyi Zhu, Qijun Chen, Rui Fan"
+  venue: "Autonomous Driving Perception: Fundamentals and Applications, Springer"
+  year: 2023
+  pages: "357–387"
+  doi: 10.1007/978-981-99-4287-9_11
+- id: digital-transformation
+  category: chapter
+  title: "Digital Transformation for Intelligent Road Condition Assessment"
+  authors: "Sicen Guo, Yue Bai, Mohammud Junaid Bocus, Rui Fan"
+  venue: "Intelligent Systems in Digital Transformation: Theory and Applications, Springer"
+  year: 2022
+  pages: "511–533"
+  doi: 10.1007/978-3-031-16598-6_22
