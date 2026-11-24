@@ -19,6 +19,7 @@ en:
   under_review: Under review
   scholar_link: Google Scholar
   arxiv_link: arXiv
+  view_figure: View full-size figure
   footer: Academic homepage
   skip: Skip to main content
   contact_text: For research discussions and academic collaboration, please contact me by email.
@@ -44,6 +45,7 @@ zh:
   under_review: 在审
   scholar_link: Google Scholar
   arxiv_link: arXiv
+  view_figure: 点击查看原图
   footer: 科研个人主页
   skip: 跳转到主要内容
   contact_text: 欢迎通过邮箱交流研究工作、探讨学术合作。

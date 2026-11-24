@@ -1,4 +1,9 @@
 - id: vfm-depth
+  image: /images/publications/vfm-depth-framework.png
+  image_width: 846
+  image_height: 439
+  image_alt_en: HFIT architecture with vision foundation model, RHFF, and HGFI modules.
+  image_alt_zh: 包含视觉基础模型、RHFF 与 HGFI 模块的 HFIT 网络框架。
   category: journal
   title: "Fully Exploiting Vision Foundation Model's Profound Prior Knowledge for Generalizable RGB-Depth Driving Scene Parsing"
   authors: "Sicen Guo, Tianyou Wen, Chuang-Wei Liu, Qijun Chen, Rui Fan"
@@ -11,6 +16,11 @@
   summary_en: Harnessing vision foundation models and multi-source, multi-scale feature fusion for RGB-depth driving scene parsing.
   summary_zh: 利用视觉基础模型与多源多尺度特征融合，实现具有泛化能力的 RGB-深度驾驶场景解析。
 - id: lix
+  image: /images/publications/lix-framework.png
+  image_width: 5694
+  image_height: 3281
+  image_alt_en: LIX teacher-student framework with dynamic logit distillation and recalibrated feature distillation.
+  image_alt_zh: LIX 教师与学生模型框架，包含动态逻辑蒸馏与重校准特征蒸馏。
   category: journal
   title: "LIX: Implicitly Infusing Spatial Geometric Prior Knowledge Into Visual Semantic Segmentation for Autonomous Driving"
   authors: "Sicen Guo, Ziwei Long, Zhiyuan Wu, Qijun Chen, Ioannis Pitas, Rui Fan"
@@ -23,6 +33,11 @@
   summary_en: Transferring spatial geometric knowledge from a data-fusion teacher to a single-modal segmentation model through knowledge distillation.
   summary_zh: 通过知识蒸馏，将数据融合教师模型中的空间几何先验迁移至单模态语义分割模型。
 - id: udtiri
+  image: /images/publications/udtiri-overview.png
+  image_width: 1020
+  image_height: 282
+  image_alt_en: UDTIRI benchmark examples for object detection, semantic segmentation, and instance segmentation.
+  image_alt_zh: UDTIRI 基准中目标检测、语义分割与实例分割的标注示例。
   category: journal
   title: "UDTIRI: An Online Open-Source Intelligent Road Inspection Benchmark Suite"
   authors: "Sicen Guo, Jiahang Li, Yi Feng, Dacheng Zhou, Denghuang Zhang, Chen Chen, Shuai Su, Xingyi Zhu, Qijun Chen, Rui Fan"
@@ -33,18 +48,33 @@
   summary_en: An open-source benchmark suite and online evaluation platform for intelligent road inspection.
   summary_zh: 面向智能道路检测的开源基准套件与在线评测平台。
 - id: mulgeca
+  image: /images/publications/mulgeca-framework.png
+  image_width: 1000
+  image_height: 515
+  image_alt_en: MulGeCa architecture with geometric text calibration, contextual anchor aggregation, and mask refinement.
+  image_alt_zh: MulGeCa 网络框架，包含几何文本校准、上下文锚点聚合与掩码精炼。
   category: manuscript
   title: "MulGeCa: Anchoring Scattered Semantic Representations to Physical Entities"
   authors: "Sicen Guo et al."
   summary_en: Scene-, region-, and instance-level geometric calibration for open-vocabulary segmentation.
   summary_zh: 面向开放词汇分割的场景、区域与实例三级几何校准。
 - id: tailorseg
+  image: /images/publications/tailorseg-framework.png
+  image_width: 1200
+  image_height: 470
+  image_alt_en: TailorSeg framework with frequency-aware and scale-aware temperature scaling and boundary-aware attention.
+  image_alt_zh: TailorSeg 网络框架，包含频率与尺度感知温度校准及边界感知注意力。
   category: manuscript
   title: "TailorSeg: Frequency, Scale, and Geometry Calibration for Open-Vocabulary Segmentation"
   authors: "Sicen Guo et al."
   summary_en: Calibrating class frequency, target scale, and geometric boundaries for long-tailed and unseen categories.
   summary_zh: 联合校准类别频率、目标尺度与几何边界，改善长尾及未见类别的分割。
 - id: dsrs
+  image: /images/publications/dsrs-framework.png
+  image_width: 2036
+  image_height: 610
+  image_alt_en: DSRS-Net architecture with geometric prior extraction and depth-guided hierarchical feature interaction.
+  image_alt_zh: DSRS-Net 网络框架，包含几何先验提取与深度引导的层次特征交互。
   category: manuscript
   title: "DSRS: Teaching MLLMs to Perceive, Reason, and Segment in Complex Driving Scenes"
   authors: "Sicen Guo, Zhengfei Song, Kuanhsun Chen, Xu Huang, Ping Zhong, Wei Ye, Shaoyi Du, Rui Fan"
@@ -52,12 +82,22 @@
   summary_en: Driving scene reasoning segmentation with multimodal large language models and geometric features.
   summary_zh: 融合多模态大语言模型与几何特征的驾驶场景推理分割。
 - id: fastra
+  image: /images/publications/fastra-framework.png
+  image_width: 1200
+  image_height: 400
+  image_alt_en: FaSTra multi-trajectory reasoning video segmentation framework with lightweight propagation and a trajectory router.
+  image_alt_zh: FaSTra 多轨迹推理视频分割框架，包含轻量传播与轨迹路由。
   category: manuscript
   title: "FaSTra: A Faster Yet Stronger Multi-Trajectory Learning Framework for Reasoning Video Object Segmentation"
   authors: "Sicen Guo et al."
   summary_en: Efficient reasoning video object segmentation through complementary trajectories, dynamic routing, distillation, and reinforcement learning.
   summary_zh: 结合互补轨迹、动态路由、蒸馏与强化学习，提高推理视频目标分割的效率与性能。
 - id: road-environment
+  image: /images/publications/road-environment-overview.png
+  image_width: 805
+  image_height: 760
+  image_alt_en: Taxonomy of sensing technologies and road defect detection in road environment perception.
+  image_alt_zh: 道路环境感知中的传感技术与道路缺陷检测方法分类框架。
   category: chapter
   title: "Road Environment Perception for Safe and Comfortable Driving"
   authors: "Sicen Guo, Yu Jiang, Jiahang Li, Dacheng Zhou, Shuai Su, Mohammud Junaid Bocus, Xingyi Zhu, Qijun Chen, Rui Fan"
@@ -66,6 +106,11 @@
   pages: "357–387"
   doi: 10.1007/978-981-99-4287-9_11
 - id: digital-transformation
+  image: /images/publications/digital-transformation-overview.png
+  image_width: 723
+  image_height: 640
+  image_alt_en: Overview of road data acquisition and computer-vision-based road defect detection techniques.
+  image_alt_zh: 道路数据采集与基于计算机视觉的道路缺陷检测技术综述示意图。
   category: chapter
   title: "Digital Transformation for Intelligent Road Condition Assessment"
   authors: "Sicen Guo, Yue Bai, Mohammud Junaid Bocus, Rui Fan"

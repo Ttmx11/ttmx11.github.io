@@ -13,6 +13,7 @@
 | 排版、照片显示比例与配色 | `assets/css/custom.css` |
 | 公开版简历 | `assets/files/Sicen_Guo_CV.pdf` |
 | 头像 | `images/gsc_bio.jpg` |
+| 论文框架图与综述配图 | `images/publications/` |
 
 YAML 缩进使用空格。含冒号的标题请用引号包住；列表中每篇论文以 `- id:` 开始。
 
@@ -33,6 +34,8 @@ YAML 缩进使用空格。含冒号的标题请用引号包住；列表中每篇
 `category` 可选 `journal`（期刊论文）、`manuscript`（在审稿件）或 `chapter`（书籍章节）。已发表成果未填写 `scholar` 时，自动链接到完整标题的 Scholar 搜索结果；取得准确的个人 Scholar 条目链接后，可添加 `scholar: https://scholar.google.com/citations?...`。
 
 在审稿件仅填写已经核对的 `arxiv` 地址，无地址则不添加链接。稿件录用后改为 `journal` 并补齐正式年份、刊物等信息；不要将预印本和最终发表版本重复计数。
+
+每项成果通过 `image` 指定配图路径，`image_alt_en` 和 `image_alt_zh` 描述图片内容，`image_width` 和 `image_height` 记录原图尺寸。配图在桌面左侧显示、在手机上方显示，点击可查看完整图片。替换配图时同时更新原图尺寸，保持完整图像、不裁切框架内容。
 
 验证脚本自动读取数据中的成果数量及无链接稿件；新增论文或补充 arXiv 链接时无需修改验证脚本。
 

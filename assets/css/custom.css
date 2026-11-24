@@ -54,7 +54,11 @@ body .academic-shell > .academic-content { width: auto; min-width: 0; float: non
 .education-list p { margin: .1rem 0 0; }
 .muted { color: #66727a; font-size: .9rem; }
 .academic-content h3.publication-group { font-size: 1.075rem; font-weight: 650; margin: 1.8rem 0 1.1rem; }
-.publication { margin: 0 0 1.6rem; padding-bottom: 1.35rem; border-bottom: 1px solid #edf0f2; }
+.publication { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 22px; align-items: start; margin: 0 0 1.6rem; padding-bottom: 1.35rem; border-bottom: 1px solid #edf0f2; }
+.publication-body { min-width: 0; }
+.publication-figure { display: flex; align-items: center; justify-content: center; min-height: 150px; padding: 8px; border: 1px solid #e5e9ec; border-radius: 4px; background: #fff; transition: border-color .15s ease; }
+.publication-figure:hover { border-color: #8da9b8; }
+.publication-figure img { display: block; width: 100%; height: auto; max-height: 175px; object-fit: contain; }
 .publication:last-child { border-bottom: 0; }
 .publication-heading { display: flex; align-items: baseline; gap: .75rem; }
 .publication h4.publication-title { flex: 1; min-width: 0; font-size: 1rem; font-weight: 650; line-height: 1.65; margin: 0 0 .35rem; overflow-wrap: break-word; }
@@ -82,7 +86,7 @@ body .page__footer { position: static; float: none; margin-top: 3.5rem; border-t
 .page__footer p { margin: .1rem 0; font-size: .875rem; }
 .page__footer .theme-credit { font-size: .8rem; }
 @media (min-width: 1500px) { body #main.academic-shell { max-width: 1200px; grid-template-columns: 230px minmax(0, 1fr); gap: 72px; } .masthead .site-header, .page__footer footer { max-width: 1200px; } }
-@media (max-width: 1000px) { body #main.academic-shell { gap: 38px; grid-template-columns: 200px minmax(0, 1fr); } .site-nav { gap: 1rem; } .publication-heading { display: block; } .venue-badge { display: inline-block; margin-bottom: .4rem; } }
+@media (max-width: 1000px) { body #main.academic-shell { gap: 38px; grid-template-columns: 200px minmax(0, 1fr); } .site-nav { gap: 1rem; } .publication { grid-template-columns: minmax(0, 1fr); gap: .9rem; } .publication-figure { width: 100%; max-width: 380px; } .publication-figure img { max-height: 200px; } .publication-heading { display: block; } .venue-badge { display: inline-block; margin-bottom: .4rem; } }
 @media (max-width: 760px) {
   html { scroll-padding-top: 125px; }
   body { padding-top: 104px; }

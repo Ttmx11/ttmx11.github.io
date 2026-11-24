@@ -18,3 +18,13 @@ MulGeCa、TailorSeg、FaSTra 尚未找到可以确认的 arXiv 页面，不设�
 比赛名称与奖项来自本人简历；缺失年份不补造。英语名称为描述性翻译。专利、额外荣誉待本人补充，不据实验室的同名成果自动归入个人主页。
 
 网页与公开 CV 均不展示手机号、投稿目标会议和审稿轮次；未复制原始简历至仓库。
+
+## 成果配图
+
+- HFIT / RGB-depth：arXiv `2502.06219v1` 的网络框架图。
+- LIX：论文项目官网提供的 `resources/framework.png`。
+- DSRS：arXiv `2611.06160v1` 的 Fig. 3（DSRS-Net 网络框架）。
+- MulGeCa、TailorSeg、FaSTra：本人本地 LaTeX 稿件中的独立网络框架 PDF，转换为网页图片，未上传完整稿件。
+- UDTIRI：论文原文 Fig. 2（三种任务的标注示例）。该工作为数据集与评测基准，使用原文中的代表性图像。
+- Road Environment Perception：正式出版书籍原文 Fig. 11.1（综述分类框架）。
+- Digital Transformation：章节原文 Fig. 3（数据采集与道路缺陷检测技术综述）。

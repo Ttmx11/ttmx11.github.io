@@ -59,7 +59,8 @@ for relative, language in [('index.html', 'en'), ('zh/index.html', 'zh-CN')]:
     for paper in unlinked_manuscripts:
         start=html.find('id="paper-'+paper+'"')
         fragment=html[start:html.find('</article>',start)]
-        if '<a ' in fragment: errors.append('Unverified manuscript link: ' + paper)
+        title = re.search(r'<h4 class="publication-title">(.*?)</h4>', fragment, flags=re.S)
+        if title and '<a ' in title.group(1): errors.append('Unverified manuscript title link: ' + paper)
 
 required = ['assets/files/Sicen_Guo_CV.pdf', 'images/gsc_bio.jpg', 'assets/css/main.css', 'assets/css/custom.css', '404.html', 'sitemap.xml']
 for item in required:
