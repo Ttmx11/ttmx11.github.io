@@ -39,7 +39,7 @@ body .academic-shell > .sidebar { position: sticky; top: 105px; bottom: auto; al
 .profile-links a:hover { text-decoration: underline; }
 body .academic-shell > .academic-content { width: auto; min-width: 0; float: none; padding: 0; margin: 0; }
 .academic-content > p:empty { display: none; }
-.academic-content section { margin-bottom: 2.8rem; scroll-margin-top: 95px; }
+.academic-content section { margin-bottom: 2.8rem; scroll-margin-top: 0; }
 .academic-content h2 { font-size: 1.5rem; line-height: 1.35; margin: 0 0 1rem; padding-bottom: .6rem; border-bottom: 1px solid #e3e8ec; font-weight: 650; letter-spacing: -.02em; }
 .academic-content .intro-title { font-size: 1.85rem; border: 0; padding-bottom: 0; margin-bottom: 1.1rem; }
 .eyebrow { color: #70808b; text-transform: uppercase; letter-spacing: .13em; font-size: .75rem; font-weight: 600; margin: 0 0 .55rem; }
@@ -104,7 +104,7 @@ body .page__footer { position: static; float: none; margin-top: 3.5rem; border-t
   .sidebar .profile-links li { font-size: .875rem; }
   .academic-content .intro-title { font-size: 1.6rem; }
   .academic-content h2 { font-size: 1.35rem; }
-  .academic-content section { scroll-margin-top: 120px; margin-bottom: 2.2rem; }
+  .academic-content section { scroll-margin-top: 0; margin-bottom: 2.2rem; }
   .education-heading { display: block; }
   .education-date { display: block; margin-top: .1rem; }
   .award-list li { display: block; }

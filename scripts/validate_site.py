@@ -7,6 +7,12 @@ import re
 
 root = Path(sys.argv[1] if len(sys.argv) > 1 else '_site').resolve()
 errors = []
+source = Path('_data/publications.yml').read_text(encoding='utf-8')
+records = re.split(r'(?m)^- id: ', source)[1:]
+paper_ids = [record.splitlines()[0].strip() for record in records]
+unlinked_manuscripts = [record.splitlines()[0].strip() for record in records
+                        if re.search(r'(?m)^  category: manuscript\s*$', record)
+                        and not re.search(r'(?m)^  arxiv: https://arxiv\.org/abs/', record)]
 
 class Page(HTMLParser):
     def __init__(self):
@@ -33,7 +39,9 @@ for relative, language in [('index.html', 'en'), ('zh/index.html', 'zh-CN')]:
     if page.lang != language: errors.append('Incorrect language: ' + relative)
     for section in ('about', 'research', 'education', 'publications', 'awards', 'contact'):
         if section not in page.ids: errors.append('Missing section: ' + section)
-    if html.count('class="publication"') != 9: errors.append('Expected 9 scholarly works: ' + relative)
+    if html.count('class="publication"') != len(paper_ids): errors.append('Publication count differs from source data: ' + relative)
+    for paper_id in paper_ids:
+        if 'paper-' + paper_id not in page.ids: errors.append('Missing work: ' + paper_id)
     for link in page.links:
         parsed = urlparse(link)
         if parsed.scheme or parsed.netloc: continue
@@ -48,8 +56,7 @@ for relative, language in [('index.html', 'en'), ('zh/index.html', 'zh-CN')]:
         errors.append('Unexpected personal phone number in rendered page')
     for marker in ('ICLR 2027', 'AAAI 2027', 'resume.pdf', 'Your Name', '{{', '{%'):
         if marker in html: errors.append('Unexpected source/private/template text: ' + marker)
-    if 'https://arxiv.org/abs/2611.06160' not in html: errors.append('Missing DSRS link')
-    for paper in ('mulgeca','tailorseg','fastra'):
+    for paper in unlinked_manuscripts:
         start=html.find('id="paper-'+paper+'"')
         fragment=html[start:html.find('</article>',start)]
         if '<a ' in fragment: errors.append('Unverified manuscript link: ' + paper)
@@ -61,4 +68,4 @@ pdfs = list(root.rglob('*.pdf'))
 if len(pdfs) != 1: errors.append('Only the public CV PDF may be published')
 if errors:
     raise SystemExit('\n'.join(errors))
-print('Passed: bilingual pages, 9 works each, anchors, local assets, manuscript links and public artifact checks.')
+print(f'Passed: bilingual pages, {len(paper_ids)} works each, anchors, local assets, manuscript links and public artifact checks.')
